@@ -1,0 +1,142 @@
+:root {
+    --primary: #2563eb;
+    --dark: #1e293b;
+    --light: #f8fafc;
+}
+
+body {
+    background-color: #f1f5f9;
+    font-family: 'Inter', sans-serif;
+    color: var(--dark);
+}
+
+/* Typography */
+.text-gradient {
+    background: linear-gradient(135deg, #2563eb 0%, #7c3aed 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    /* or text-fill if you really need it */
+    -webkit-text-fill-color: transparent;
+
+}
+
+/* Upload Card */
+.upload-card {
+    border: 2px dashed #cbd5e1 !important;
+    background-color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.upload-card:hover {
+    border-color: var(--primary) !important;
+    background-color: #eff6ff;
+    transform: translateY(-5px);
+}
+
+/* Animations */
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hover-lift {
+    transition: transform 0.2s;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+}
+
+/* Icons */
+.icon-circle {
+    width: 60px;
+    height: 60px;
+    background-color: #eff6ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-square {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-blue-light {
+    background-color: #e0e7ff;
+}
+
+/* Circular Chart */
+.severity-dial {
+    width: 120px;
+    height: 120px;
+    position: relative;
+}
+
+.circular-chart {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    max-height: 250px;
+}
+
+.circle-bg {
+    fill: none;
+    stroke: #eee;
+    stroke-width: 2.5;
+}
+
+.circle {
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    animation: progress 1s ease-out forwards;
+    transition: stroke 0.5s ease;
+}
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+@keyframes progress {
+    0% {
+        stroke-dasharray: 0 100;
+    }
+}
+
+/* Paper Text */
+.paper-text {
+    font-family: 'Courier New', monospace;
+    white-space: pre-wrap;
+    color: #334155;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Gradient Backgrounds */
+.bg-gradient-warning-subtle {
+    background: linear-gradient(135deg, #fffbeb 0%, #fff7ed 100%);
+    border: 1px solid #fcd34d !important;
+}

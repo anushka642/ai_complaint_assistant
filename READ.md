@@ -1,19 +1,12 @@
 # AI Smart Complaint Assistant 🏛️🤖
 
-An intelligent civic issue reporting system.
+An intelligent civic issue reporting system designed to streamline how community problems are logged and handled.
 
-## Features
-* **AI Categorization:** Automatically classifies local complaints and generates reports.
+## ✨ Features
+* **AI Categorization:** Automatically classifies local complaints and generates structured reports.
+* **Interactive Interface:** Clean web UI for effortless user submissions.
 
-## Tech Stack
+## 🛠️ Tech Stack
 * **Backend:** Python, Flask / FastAPI
 * **AI:** Google GenAI / OpenAI APIs
-* **Frontend:** HTML, CSS, JS
-
-## Running Locally
-
-1. **Clone & Install:**
-   ```bash
-   git clone <repo-url>
-   cd ai_complaint_assistant
-   pip install -r requirements.txt
+* **Frontend:** HTML, CSS, JavaScript
